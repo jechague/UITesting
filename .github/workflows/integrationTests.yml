@@ -27,7 +27,7 @@ jobs:
             shell: zsh {0}
 
         concurrency: 
-          group: integration-tests-${{ github.ref }}
+          group: integration-tests-${{ github.ref }}-${{ matrix.xcode-version }}-${{ matrix.device }}
           cancel-in-progress: true
 
         env:
