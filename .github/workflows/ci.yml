@@ -1,4 +1,4 @@
-name: Build & Test
+name: Build & Unit Tests
 
 on: 
   workflow_dispatch:
