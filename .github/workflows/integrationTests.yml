@@ -17,7 +17,7 @@ jobs:
     integration-tests:
         strategy:
             matrix:
-              xcode-version: [14.3.1, 15.0]
+              xcode-version: ["14.3.1", "15.0"]
               device: [iPhone 14, iPhone 15 Pro]
         
         runs-on: [macos-13-xl]
