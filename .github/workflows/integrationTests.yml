@@ -18,7 +18,10 @@ jobs:
         strategy:
             matrix:
               xcode-version: ["14.3.1", "15.0"]
-              device: [iPhone 14, iPhone 14 Pro Max]
+              device: [iPhone 14, iPhone 15 Pro]
+              exclude:
+                - xcode-version: "14.3.1"
+                  device: iPhone 15 Pro
         
         runs-on: [macos-13-xl]
     
